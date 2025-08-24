@@ -1,0 +1,88 @@
+{
+  "name": "dotnet-dependency-graph",
+  "displayName": ".NET Dependency Graph",
+  "description": "Professional .NET dependency analysis with interactive graphs, security scanning, and comprehensive reporting",
+  "version": "1.0.0",
+  "publisher": "Fuzzelogic Solutions Limited",
+  "author": {
+    "name": "Fuzzelogic Solutions Limited",
+    "email": "info@fuzzelogicsolutions.com",
+    "url": "https://www.fuzzelogicsolutions.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/yourcompany/dotnet-dependency-graph",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourcompany/dotnet-dependency-graph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourcompany/dotnet-dependency-graph/issues",
+    "email": "info@fuzzelogicsolutions.com"
+  },
+  "icon": "images/appIcon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "keywords": [
+    ".NET",
+    "dependency",
+    "graph",
+    "security",
+    "analysis",
+    "NuGet",
+    "packages",
+    "dependencies",
+    "visualization",
+    "audit"
+  ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization",
+    "Linters"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dotnetDependencyGraph.analyze",
+        "title": "Analyze .NET Dependencies",
+        "category": ".NET Dependency Graph",
+        "icon": "$(graph)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .sln",
+          "command": "dotnetDependencyGraph.analyze",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "dotnetDependencyGraph.analyze"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  }
+}
