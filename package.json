@@ -3,20 +3,20 @@
   "displayName": ".NET Dependency Graph",
   "description": "Professional .NET dependency analysis with interactive graphs, security scanning, and comprehensive reporting",
   "version": "1.0.0",
-  "publisher": "Fuzzelogic Solutions Limited",
+  "publisher": "fuzzelogic-solutions",
   "author": {
     "name": "Fuzzelogic Solutions Limited",
     "email": "info@fuzzelogicsolutions.com",
     "url": "https://www.fuzzelogicsolutions.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/yourcompany/dotnet-dependency-graph",
+  "homepage": "https://github.com/FELSGithub/dotnet-dependency-graph",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourcompany/dotnet-dependency-graph.git"
+    "url": "https://github.com/FELSGithub/dotnet-dependency-graph.git"
   },
   "bugs": {
-    "url": "https://github.com/yourcompany/dotnet-dependency-graph/issues",
+    "url": "https://github.com/FELSGithub/dotnet-dependency-graph/issues",
     "email": "info@fuzzelogicsolutions.com"
   },
   "icon": "images/appIcon.png",
